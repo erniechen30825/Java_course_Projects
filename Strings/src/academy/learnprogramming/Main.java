@@ -27,11 +27,14 @@ public class Main {
         int myInt = 50;
         lastString = lastString + myInt;
         System.out.println("LastString is equal to " + lastString);
+        // THe int is transformed into and string
         double doubleNumber = 120.47d;
         lastString = lastString +doubleNumber;
         System.out.println("LastString is equal to " + lastString);
         //Strings are Immutable
-        //StringBuffer
+        //when you add things to a string, it actually creates a new string
+        //StringBuffer is more efficient than what we have done
+        //StringBuffer are mutable
         //String can be treated as a 9th primitive data type
         //BUT IT IS　NOT, it is a class
     }

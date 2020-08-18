@@ -7,6 +7,7 @@ public class Main {
         char myChar = 'D';
         //''<- Char,"" <- String
         //Char can only store one character
+        //but occupy 2bytes (16bites)
         //can store Unicode
         char myUnicodeChar = '\u0044';
         char myCopyRightChar = '\u00A9';

@@ -8,12 +8,12 @@ public class Main {
         int result = 1 + 2; //1+2=3
         System.out.println("1 + 2 = " + result);
         int previousResult = result;
-        System.out.println("prviousResult =  " + previousResult);
+        System.out.println("previousResult =  " + previousResult);
         result = result - 1;
         //Comments are ignored by computers and to help describe something
         //also used for disabling code
         System.out.println("3 - 1  =  " + result);
-        System.out.println("prviousResult =  " + previousResult);
+        System.out.println("previousResult =  " + previousResult);
         //the previousResult variable is not effected by the change in result variable becasue it was declared before the change
 
         result = result*10; // 2*10=20
@@ -39,32 +39,42 @@ public class Main {
         if (isAlien != true) {
             System.out.println("It is not an alien ! ");
             System.out.println("And I am scared of aliens");
-            //if-then statement should always use a code block!!
+            //only one line will be printed if without a code block
+            // if-then statement should always use a code block!!
         }
         int topScore = 80 ;
         if (topScore < 100){
             System.out.println("You got the high score !");
         }
-        int secondTopScore =  81;
+        int secondTopScore =  79;
         if ((topScore > secondTopScore) && (topScore < 100)){
             System.out.println("Greater than second top score and less than 100 ");
         }
-
+        if ((topScore > 90) || (secondTopScore <= 90)){
+            System.out.println("Either or both of conditions are true");
+        }
         int newValue = 50;
         if(newValue == 50){
             System.out.println(" This is true");
         }
+        // "=" is for assigning a value to variable
+        // "==" is for comparing values
+        // "&&" and "||" operates on boolean operands -> used almost always
+        // "&" and "|" are bit-wise operators -> advanced concept, not common
         boolean isCar = false;
-        if (isCar){
+        if (isCar ){
             System.out.println("This is not supposed to happen");
         }
         // when using not operators "!" is more recommended
+        // The Not operator
+        // if(isCar == False) is the same as if (!isCar)
         isCar = true;
         boolean wasCar = isCar ? true : false;
         if (wasCar){
             System.out.println("wasCar is true");
         }
         //Ternary Operator " ? "
+        //shortcut of the if-then-else statement
         //example:
         // int ageOfClient = 20
         // boolean isEighteenOrOver =  (ageOfClient == 20)? true : false;
