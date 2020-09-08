@@ -15,10 +15,19 @@ public class Main {
 //	else {
 //		System.out.println("This was executed");
 //	}
+
+		//importance of code blocks
+		// without code blocks, only the next line
+		// will be processed under the condition(if)
 		if(gameOver ){
 			int finalScore = score + (levelCompleted * bonus);
 			System.out.println("Yout final score was " +finalScore);
-		}
+		}//scope
+		// inside a code block you can access variables from outside  the code block
+		// But you can not access the variable inside the code block from the outside
+		//once the code block is finished,
+		//the variable created inside the code block is deleted
+
 		//Challenge:
 		//Print out second score on screen with the following
 		//score == 10000
@@ -32,5 +41,6 @@ public class Main {
 			int newfinalScore = newscore + (newlevelCompleted * newbonus);
 			System.out.println("Second score was " + newfinalScore);
 		}
+		// Also could reuse the original variables
     }
 }
